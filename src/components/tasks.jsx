@@ -20,7 +20,8 @@ class Movies extends Component {
   handleToggle = async (id) => {
     let tasks = [...this.state.tasks];
     let ind = tasks.findIndex((task) => task.id === id);
-    tasks[ind] = await updateTask(tasks[ind]);
+    const { data: task } = await updateTask(tasks[ind]);
+    tasks[ind] = task;
     this.setState({ tasks });
   };
 
