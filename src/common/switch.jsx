@@ -24,8 +24,6 @@ class Switch extends Component {
   }
 
   change = (e) => {
-    console.log("status change: ", this.state.status);
-    console.log("current target : ", e.currentTarget.checked);
     const { status } = e.currentTarget.checked;
     this.setState({ status });
   };

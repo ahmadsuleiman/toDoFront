@@ -5,7 +5,7 @@ import { getCurrentUser } from "../services/userService";
 import TasksTable from "./tasksTable";
 import { Link } from "react-router-dom";
 
-class Movies extends Component {
+class Tasks extends Component {
   state = {
     userid: "",
     tasks: [],
@@ -53,4 +53,4 @@ class Movies extends Component {
   }
 }
 
-export default Movies;
+export default Tasks;
