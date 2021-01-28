@@ -6,7 +6,7 @@ import Joi from "joi-browser";
 import { createTask } from "../services/taskService";
 import { getCurrentUser } from "../services/userService";
 
-class MovieForm extends Form {
+class TaskForm extends Form {
   state = {
     data: {
       taskname: "",
@@ -45,4 +45,4 @@ class MovieForm extends Form {
   }
 }
 
-export default MovieForm;
+export default TaskForm;
